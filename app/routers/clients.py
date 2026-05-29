@@ -1,6 +1,6 @@
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
-from app.dabatase.db import get_db
+from app.database.db import get_db
 from app.schemas.client import ClienteCreateRequest, ClienteResponse
 from app.services.client_service import ClienteService
 

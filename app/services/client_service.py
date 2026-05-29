@@ -1,5 +1,5 @@
 from sqlalchemy.orm import Session
-from app.dabatase.models.client import Cliente
+from app.database.models.client import Cliente
 from app.repositories.client_repository import ClienteRepository, ProcessedEventRepository
 from app.schemas.client import ClienteCreateRequest
 from app.schemas.webhook import PipefyCardUpdatedWebhook

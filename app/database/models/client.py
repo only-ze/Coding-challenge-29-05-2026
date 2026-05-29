@@ -1,13 +1,13 @@
 from datetime import datetime, timezone
-from sqlalchemy import BigInteger, DateTime, Numeric, String
+from sqlalchemy import Integer, DateTime, Numeric, String
 from sqlalchemy.orm import Mapped, mapped_column
-from app.dabatase.db import Base
+from app.database.db import Base
 
 
 class Cliente(Base):
     __tablename__ = "clientes"
 
-    id: Mapped[int] = mapped_column(BigInteger, primary_key=True, index=True)
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
     nome: Mapped[str] = mapped_column(String(255), nullable=False)
     email: Mapped[str] = mapped_column(String(255), unique=True, nullable=False, index=True)
     tipo_solicitacao: Mapped[str] = mapped_column(String(255), nullable=False)
@@ -31,7 +31,7 @@ class Cliente(Base):
 class ProcessedEvent(Base):
     __tablename__ = "processed_events"
 
-    id: Mapped[int] = mapped_column(BigInteger, primary_key=True, index=True)
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
     event_id: Mapped[str] = mapped_column(String(255), unique=True, nullable=False, index=True)
     processado_em: Mapped[datetime] = mapped_column(
         DateTime(timezone=True),

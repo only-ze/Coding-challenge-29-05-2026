@@ -1,6 +1,6 @@
 import pytest
 from fastapi.testclient import TestClient
-from app.dabatase.models.client import Cliente, ProcessedEvent
+from app.database.models.client import Cliente, ProcessedEvent
 
 PAYLOAD_CLIENTE_ACIMA = {
     "cliente_nome": "Ana Souza",

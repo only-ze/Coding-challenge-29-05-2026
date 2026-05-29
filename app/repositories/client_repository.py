@@ -1,5 +1,5 @@
 from sqlalchemy.orm import Session
-from app.dabatase.models.client import Cliente, ProcessedEvent
+from app.database.models.client import Cliente, ProcessedEvent
 
 class ClienteRepository:
     def __init__(self, db: Session):

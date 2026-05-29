@@ -1,6 +1,6 @@
 from contextlib import asynccontextmanager
 from fastapi import FastAPI
-from app.dabatase import Base, engine
+from app.database.db import Base, engine, get_db
 from app.routers.clients import router as clientes_router
 from app.routers.webhooks import router as webhooks_router
 

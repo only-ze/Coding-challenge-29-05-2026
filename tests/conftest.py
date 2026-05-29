@@ -3,7 +3,7 @@ from fastapi.testclient import TestClient
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.pool import StaticPool
-from app.dabatase.db import Base, get_db
+from app.database.db import Base, get_db
 from app.main import app
 
 SQLITE_URL = "sqlite://"

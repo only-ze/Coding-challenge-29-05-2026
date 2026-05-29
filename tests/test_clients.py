@@ -1,6 +1,6 @@
 import pytest
 from fastapi.testclient import TestClient
-from app.dabatase.models.client import Cliente
+from app.database.models.client import Cliente
 
 
 PAYLOAD_VALIDO = {
