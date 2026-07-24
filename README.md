@@ -1,4 +1,4 @@
-# Client Management API
+# Pipefy Client API
 
 API interna para gestão de clientes e seus patrimônios investidos, com integração simulada ao **Pipefy** via GraphQL.
 
@@ -58,7 +58,7 @@ Routers → Services → Repositories → Models
 ## Estrutura de Pastas
 
 ```
-mundo-invest-api/
+pipefy-client-api/
 ├── app/
 │   ├── main.py                  # factory da aplicação FastAPI + lifespan
 │   ├── config.py                # settings via pydantic-settings
@@ -106,7 +106,7 @@ Sobe o banco PostgreSQL e a API em conjunto:
 ```bash
 # 1. Clone o repositório
 git clone <url-do-repositorio>
-cd mundo-invest-api
+cd pipefy-client-api
 
 # 2. Copie o arquivo de variáveis de ambiente
 cp .env.example .env
