@@ -1,4 +1,4 @@
-# Mundo Invest — Client Management API
+# Client Management API
 
 API interna para gestão de clientes e seus patrimônios investidos, com integração simulada ao **Pipefy** via GraphQL.
 
